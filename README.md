@@ -174,8 +174,6 @@ updated: 2026-11-11
 tags: [project]
 ---
 
-# Atlas
-
 A single-user desktop app.
 
 ## Status

@@ -48,7 +48,7 @@ Always read a note before changing it. Never delete or rewrite lines the user wr
 After every save, also add the work to today's journal note, so the vault has one chronological record across projects.
 
 1. **Where:** the vault's daily note. Read its folder, date format and template from `.obsidian/daily-notes.json` (`folder`, `format` in Moment.js tokens, `template`) or, if the Periodic Notes plugin is on, from `.obsidian/plugins/periodic-notes/data.json` (`daily`). If neither sets a folder, use `Journal/` with `YYYY-MM-DD.md`.
-2. **Create** today's note if it does not exist, from the daily template when there is one, otherwise with a `# YYYY-MM-DD` heading.
+2. **Create** today's note if it does not exist, from the daily template when there is one, otherwise empty.
 3. **Append** under a `## Claude` heading (add the heading once, at the end of the note): one bullet per project or topic you saved, `- HH:MM [[Project]] — <what was done, one line>`. Link the note you wrote to; the details stay there, not in the journal.
 4. Skip the journal when the user asks for a single note only, or says not to.
 
@@ -65,6 +65,7 @@ Use these only when the vault has no folders, templates or notes to follow:
 - Write in the language the user is speaking, unless the vault's existing notes or headings use another; then match the vault.
 - Dates in the vault's format, else `YYYY-MM-DD`. Turn relative phrases like "yesterday" or "last week" into absolute dates.
 - Note names are unique within the vault; never create two notes with the same name.
+- Do not start a note with an H1 that repeats its file name: Obsidian already shows the file name as the note's title. Only when `.obsidian/appearance.json` has `"showInlineTitle": false` does the note need its own `# Title`.
 
 ## When done
 
