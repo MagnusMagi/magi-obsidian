@@ -43,6 +43,15 @@ Write only verified information. Check any detail you are unsure of (screen cont
 
 Always read a note before changing it. Never delete or rewrite lines the user wrote by hand; only append, or update the parts you wrote yourself.
 
+## Journal
+
+After every save, also add the work to today's journal note, so the vault has one chronological record across projects.
+
+1. **Where:** the vault's daily note. Read its folder, date format and template from `.obsidian/daily-notes.json` (`folder`, `format` in Moment.js tokens, `template`) or, if the Periodic Notes plugin is on, from `.obsidian/plugins/periodic-notes/data.json` (`daily`). If neither sets a folder, use `Journal/` with `YYYY-MM-DD.md`.
+2. **Create** today's note if it does not exist, from the daily template when there is one, otherwise with a `# YYYY-MM-DD` heading.
+3. **Append** under a `## Claude` heading (add the heading once, at the end of the note): one bullet per project or topic you saved, `- HH:MM [[Project]] — <what was done, one line>`. Link the note you wrote to; the details stay there, not in the journal.
+4. Skip the journal when the user asks for a single note only, or says not to.
+
 ## Defaults for an empty vault
 
 Use these only when the vault has no folders, templates or notes to follow:
@@ -60,4 +69,4 @@ Use these only when the vault has no folders, templates or notes to follow:
 ## When done
 
 List every note you created or updated, by its path in the vault, in one line, for example:
-"Obsidian → Projects/Atlas/Atlas.md updated, Projects/Atlas/Atlas design decisions.md created."
+"Obsidian → Projects/Atlas/Atlas.md updated, Projects/Atlas/Atlas design decisions.md created, Journal/2026-11-11.md updated."

@@ -46,6 +46,7 @@ magi-obsidian brings no system. It reads your folders, your templates and your e
 | **Index notes** | Adds a line to your home, index or map-of-content note when one lists notes like it |
 | **No duplicates** | Finds an existing note first (name, folder, `aliases`) and updates it instead of opening a second one |
 | **Hand edits are safe** | Reads a note before changing it; only appends or updates the parts it wrote |
+| **Journal** | Every save also adds a timestamped, linked line to today's daily note (your daily-notes folder and format, else `Journal/YYYY-MM-DD.md`) |
 | **Topic notes** | Decisions longer than a few paragraphs get their own note, linked from the project note |
 | **Any language** | Writes in the language you speak, or the vault's language if your notes use another |
 | **Absolute dates** | "Yesterday" or "last week" become real dates |
