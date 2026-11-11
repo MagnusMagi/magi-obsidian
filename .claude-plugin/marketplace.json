@@ -1,0 +1,14 @@
+{
+  "name": "magi-obsidian",
+  "owner": {
+    "name": "Magi"
+  },
+  "description": "A Claude Code plugin that saves your work to an Obsidian vault in the vault's own style.",
+  "plugins": [
+    {
+      "name": "magi-obsidian",
+      "source": "./",
+      "description": "Saves what you do in Claude Code to your Obsidian vault, following its folders and templates."
+    }
+  ]
+}
