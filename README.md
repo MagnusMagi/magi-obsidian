@@ -3,7 +3,7 @@
 A small Claude Code plugin that saves the work you do in Claude Code to your Obsidian vault, written the way your vault is already written.
 
 ![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-D97757)
-![Version](https://img.shields.io/badge/version-0.1.0-blue)
+![Version](https://img.shields.io/badge/version-0.3.0-blue)
 ![Obsidian](https://img.shields.io/badge/Obsidian-vault-7C3AED)
 ![Dependencies](https://img.shields.io/badge/dependencies-none-lightgrey)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
@@ -47,6 +47,7 @@ magi-obsidian brings no system. It reads your folders, your templates and your e
 | **No duplicates** | Finds an existing note first (name, folder, `aliases`) and updates it instead of opening a second one |
 | **Hand edits are safe** | Reads a note before changing it; only appends or updates the parts it wrote |
 | **Journal** | Every save also adds a timestamped, linked line to today's daily note (your daily-notes folder and format, else `Journal/YYYY-MM-DD.md`) |
+| **Covers** | If your project notes have cover images, a new project gets one too, drawn in the same size and style as the others |
 | **Topic notes** | Decisions longer than a few paragraphs get their own note, linked from the project note |
 | **Any language** | Writes in the language you speak, or the vault's language if your notes use another |
 | **Absolute dates** | "Yesterday" or "last week" become real dates |
@@ -146,6 +147,7 @@ Before writing, the plugin looks at:
 | One or two existing notes of the same kind | Uses the same properties, headings, language and date format |
 | `useMarkdownLinks` in `.obsidian/app.json` | Writes `[[Note]]` or `[Note](Note.md)` links |
 | A home, index or map-of-content note | Adds a line for the new note |
+| A cover property on similar notes, or a Bases cards view with an image | Makes a matching cover for the new note |
 
 ### Empty vault
 

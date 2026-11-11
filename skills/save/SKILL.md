@@ -43,6 +43,17 @@ Write only verified information. Check any detail you are unsure of (screen cont
 
 Always read a note before changing it. Never delete or rewrite lines the user wrote by hand; only append, or update the parts you wrote yourself.
 
+## Covers
+
+If the vault gives notes like yours a cover image, give yours one too, without asking. A vault does this when its notes of that kind share an image property (`cover`, `banner`, `image`…) or when a `.base` file showing them has a cards view with `image: note.<property>`.
+
+1. When you create such a note, or update one that lacks the property, make its cover.
+2. Copy the existing covers: same file type, name pattern, folder, size and aspect ratio (a cards view's `imageAspectRatio` is height ÷ width), and the same look.
+3. If the covers are SVG, draw a new SVG yourself: one simple emblem that stands for the note's subject, in its own colors. No text and no brand logos. Use a raster format only if you have a tool that makes images.
+4. Set the property the way the other notes do, for example `cover: "[[Atlas cover.svg]]"`.
+
+The vault decides whether there are covers; never add them to a vault whose notes have none.
+
 ## Journal
 
 After every save, also add the work to today's journal note, so the vault has one chronological record across projects.
