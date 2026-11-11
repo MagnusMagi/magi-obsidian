@@ -4,5 +4,6 @@
   "description": "Saves what you do in Claude Code to your Obsidian vault, following the vault's own folders, templates and note style.",
   "author": {
     "name": "Magi"
-  }
+  },
+  "license": "MIT"
 }

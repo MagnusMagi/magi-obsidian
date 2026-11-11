@@ -6,6 +6,7 @@ A small Claude Code plugin that saves the work you do in Claude Code to your Obs
 ![Version](https://img.shields.io/badge/version-0.1.0-blue)
 ![Obsidian](https://img.shields.io/badge/Obsidian-vault-7C3AED)
 ![Dependencies](https://img.shields.io/badge/dependencies-none-lightgrey)
+![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
 You made a decision in a session, approved a plan or finished some research. Say "save to Obsidian": Claude looks at how your vault is organized, finds the right note (or creates one in the right place, from your own template), adds the decision and its reasoning, and tells you every file it wrote in one line.
 
@@ -25,6 +26,7 @@ You made a decision in a session, approved a plan or finished some research. Say
 - [Limitations](#limitations)
 - [Update and uninstall](#update-and-uninstall)
 - [Project structure](#project-structure)
+- [License](#license)
 
 ## Why
 
@@ -258,7 +260,12 @@ magi-obsidian/
 ├── skills/
 │   └── save/
 │       └── SKILL.md         all of the plugin's behaviour
+├── LICENSE
 └── README.md
 ```
 
 To change how it behaves, edit [`skills/save/SKILL.md`](skills/save/SKILL.md).
+
+## License
+
+[MIT](LICENSE)
